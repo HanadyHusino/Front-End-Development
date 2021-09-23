@@ -1,223 +1,52 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.main-content{
-    border-bottom: 1px solid #eeeeee;
-    border-top: 1px solid #eeeeee;
-    margin-bottom: 40px;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-.main-header {
-    height: 60px;
-    padding-top: 10px;
-    clear: both;
-    
-}
-.logo{
-    float: left;
-    padding-left: 15%;
-
-}
-.main-menu{
-    float: right;
-    padding-right: 15%;
-
-}
-.main-menu ul li{
-    display: inline;
-}
-.main-menu ul li a{
-    color: rgb(14, 13, 13);
-    text-align: center;
-    margin-right: 10px;
-    text-decoration: none;
-}
-
-/* Start Pricing Section*/
-.My-section, .My-pricing{
-    text-align: center;   
-}
-.My-pricing h2{
-    font-size: 40px;
-}
-.My-pricing p{
-   padding-left: 20%;
-   padding-right: 20%; 
-   font-size: 20px;
-   margin-bottom: 40px;
-}
-.pricing-plans{
-    display: flexbox;
-    margin-top: 20px;
-}
-.pricing-plans .plan{
-    text-align: center;
-    border: #eeeeee solid 2px;
-    border-radius: 5px;
-    padding-bottom: 10px;
-    display: inline-block;
-    width: 290px;
-
-}
-.pricing-plans .plan h3{
-font-size: 18px;
-background-color: #ececec;
-margin: 0;
-padding-top: 10px;
-padding-bottom: 10px;
-}
-.pricing-plans .plan .price{
-    font-size:25px;
-    font-weight: bold;
-}
-.pricing-plans .plan span{
-    color:#c7c2c2 ;
-    font-weight: normal;
-}
-.pricing-plans .Enterprise-plan, .pricing-plans .pro-plan{
-    margin-left: 20px;
-}
-.pricing-plans .Enterprise-plan{
-    border: #1058f1 solid 2px;
-}
-.pricing-plans .Enterprise-plan h3{
-    background-color: #1058f1;
-    color:#ffffff;
-}
-.pricing-plans .plan ul{
-    list-style: none;
-    padding: 0;
-}
-.pricing-plans .plan ul li{
-    margin-bottom: 4px;
-}
-.pricing-plans .plan .button{
-    padding: 10px 0px 10px 0px;
-    width: 270px;
-    color: #ffffff;
-    background-color: #1058f1 ;
-    border-radius: 5px;
-    border: #1058f1 solid 2px;
-}
-#free-button{
-    color: #1058f1;
-    background-color: #ffffff;
-    border: #1058f1 solid 2px;
-}
-/* End Pricing Section*/
-/* Start Compare Plans */
-.compare-plans{
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-.compare-plans h3{
-    font-weight: none;
-    color: rgb(76, 77, 78);
-    font-size: 20px;    
-}
-.compare-plans table{
-    border-collapse: collapse;
-    width: 100%;
-    
-}
-.compare-plans table tr td{
-   
-    border-bottom:1px solid #eeeeee ;
-    padding: 8px 0px 8px 0px;
-   
-} 
-.compare-plans table .bold-row td{
-    border-bottom:1px solid #141414 ;
-}
-.compare-plans table tr th{
-    padding-left: 100px;
-    padding-right: 90px;
-}
-.compare-plans table tr td{
-    padding-left: 100px;
-    padding-right: 100px;
-}
-.compare-plans table tr .first-col{
-padding-left: 20px !important ;
-padding-right: 150px !important;
-text-align: left;
-}
-/* End Compare Plans */
-/* Stert Footer Style */
-footer{
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 40px;
-}
-footer .widget-footer{
-    width: 40%;
-    display: inline-table;
-    margin: 0px 50px 0px 0px;
-}
-footer .copy-right{
-    width: 100% !important;    
-}
-
-footer .widget-footer img{
-    width: 24px;
-    height: 24px;
-    margin-bottom: 5px;
-    margin-top: 10px;
-} 
-footer .widget-footer p{
-    font-size: 14px;
-}
-footer .widget-footer ul{
-    padding: 0;
-
-}
-footer .widget-footer ul li{
-    list-style: none;
-    color:#6c757d;
-    padding: 5px 0px 5px 0px;
-    font-size: 14px;
-}
-
-
-/* End Footer Style */
-
-
-
-
-
-
-
-/* Mobile Device */
-@media only screen and (max-width: 600px) {
+/* This is from 0px to 768px */
+    /* Start Header Section */
+    body {
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
     .main-content{
+        border-bottom: 1px solid #eeeeee;
+        border-top: 1px solid #eeeeee;
+        margin-bottom: 40px;
         margin-left: 5px;
         margin-right: 5px;
     }
     .main-header {
         height: 100px;
+        padding-top: 10px;
         text-align: center;
     }
     .logo{
        padding: 0;
-       float: none;
+       
     }
     .main-menu{
         padding: 0;
-        float: none;
+       
     }
     .main-menu ul{
         padding: 0;
     }
-    .main-menu ul li a{
-        margin-right: 10px;
-        font-size: 16px;
-       
+    .main-menu ul li{
+        display: inline;
     }
+    .main-menu ul li a{
+        color: rgb(14, 13, 13);
+        text-align: center;
+        margin-right: 10px;
+        text-decoration: none;
+        font-size: 16px;   
+    }
+    /*End Header Section*/
 
-/* Start Pricing Section for mobile*/
+    /* Start Pricing Section*/
+    .My-section{
+        text-align: center;
+    }
     .My-pricing{
         text-align: center;
         margin-right: 5px;
@@ -230,54 +59,225 @@ footer .widget-footer ul li{
        padding-left: 0;
        padding-right: 0; 
        font-size: 16px;
+       margin-bottom: 40px;
     }
     .pricing-plans{
         display: block;
+        margin-top: 20px;
     }
     .pricing-plans .plan{
+        text-align: center;
+        border: #eeeeee solid 2px;
+        border-radius: 5px;
+        padding-bottom: 10px;
+        display: inline-block;
         width: 290px;
+    }
+    .pricing-plans .plan h3{
+        font-size: 18px;
+        background-color: #ececec;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .pricing-plans .plan .price{
+        font-size:25px;
+        font-weight: bold;
+    }
+    .pricing-plans .plan span{
+        color:#c7c2c2 ;
+        font-weight: normal;
+    }
+    .pricing-plans .Enterprise-plan{
+        border: #1058f1 solid 2px;
+    }
+    .pricing-plans .Enterprise-plan h3{
+        background-color: #1058f1;
+        color:#ffffff;
     }
     .pricing-plans .free-plan, .pricing-plans .Enterprise-plan, .pricing-plans .pro-plan {
         margin:0px 0px 20px 0px;
     }
-
+    .pricing-plans .plan ul{
+        list-style: none;
+        padding: 0;
+    }
+    .pricing-plans .plan ul li{
+        margin-bottom: 4px;
+    }
     .pricing-plans .plan .button{
+        padding: 10px 0px 10px 0px;
         width: 270px;
+        color: #ffffff;
+        background-color: #1058f1 ;
+        border-radius: 5px;
+        border: #1058f1 solid 2px;
+    }
+    #free-button{
+        color: #1058f1;
+        background-color: #ffffff;
+        border: #1058f1 solid 2px;
+    }
+    /* End Pricing Section*/
+
+    /* Start Compare Plans */
+    .compare-plans{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .compare-plans h3{
+        font-weight: none;
+        color: rgb(76, 77, 78);
+        font-size: 20px;    
+    }
+    .compare-plans table{
+        border-collapse: collapse;
+        width: 100%;
+        
     }
     .compare-plans table tr th{
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 8px;
+        padding-right: 8px;
     }
-/* End Pricing Section for mobile*/
+    .compare-plans table tr td{
+        border-bottom:1px solid #eeeeee ;
+        padding: 8px 25px 8px 25px;
+    }
+    .compare-plans table .bold-row td{
+        border-bottom:1px solid #141414 ;
+    }
+    .compare-plans table tr .first-col{
+    padding-left: 10px !important ;
+    padding-right: 5px !important;
+    text-align: left;
+    }
+    
+    /* End Compare Plans */
 
-/* Start Compare Plans for mobile*/
-.compare-plans table tr th{
-    padding-left: 8px;
-    padding-right: 8px;
-}
-.compare-plans table tr td{
-    padding-left: 8px;
-    padding-right: 8px;
-}
-.compare-plans table tr .first-col{
-padding-left: 10px !important ;
-padding-right: 5px !important;
-}
-/* End Compare Plans for mobile*/
+    /* Stert Footer Style */
+    footer{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 40px;
+    }
+    footer .widget-footer{
+        margin: 0px 20px 0px 0px;
+    }
+    footer .copy-right img{
+        width: 24px;
+        height: 24px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        display: none;
+    } 
+    footer .copy-right p{
+        font-size: 14px;
+        display: none;
+    }
+    footer .widget-footer h4{
+        text-align: center;
+    }
+    footer .widget-footer ul{
+        padding: 0;
+        margin-left: 20%;
+    
+    }
+    footer .widget-footer ul li{
+        list-style: none;
+        color:#6c757d;
+        padding: 5px 0px 5px 0px;
+        font-size: 12px;
+    }
+    /* End Footer Style */
 
-/* Stert Footer Style for mobile*/
-footer{
-    margin-left: 5px;
-    margin-right: 5px;
-}
-footer .widget-footer{
-    width: 30%;
-    margin: 0px 20px 0px 0px;
-}
-footer .widget-footer ul li{
-    font-size: 12px;
-}
-/* End Footer Style for mobile*/
-  }
-  
+/* This is from 801px to 1440px */
+@media only screen and (min-width: 801px) {
+    /* Start Header Section */
+    .container{
+        max-width: 1440px;
+    }
+    .main-content{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .main-header {
+        height: 60px;
+        clear: both;
+    }
+    .logo{
+        padding-left: 15%;
+       float: left;
+    }
+    .main-menu{
+        padding-right: 15%;
+        float: right;
+    }
+    .main-menu ul{
+        padding: 0;
+    }
+    .main-menu ul li a{
+        font-size: 14px; 
+    }
+    /* End Header Section */
 
+    /* Start Pricing Section*/
+    
+    .My-pricing h2{
+        font-size: 40px;
+    }
+    .My-pricing p{
+       padding-left: 20%;
+       padding-right: 20%; 
+       font-size: 20px;
+       margin-bottom: 40px;
+    }
+    .pricing-plans{
+        display: flexbox;
+        margin-top: 20px;
+    }
+    .pricing-plans .free-plan, .pricing-plans .Enterprise-plan, .pricing-plans .pro-plan {
+        margin:0px 0px 20px 0px;
+    }
+    /* End Pricing Section*/
+
+    /* Start Compare Plans */ 
+    .compare-plans table tr th{
+        padding-left: 100px;
+        padding-right: 90px;
+    }
+    .compare-plans table tr td{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .compare-plans table tr .first-col{
+        padding-left: 20px !important ;
+        padding-right: 150px !important;
+    }
+    /* End Compare Plans */
+
+    /* Start Footer */
+    footer{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    footer .widget-footer{
+        width: 30%;
+        display: inline-table;
+    }
+    footer .widget-footer ul li{
+        font-size: 14px;
+    }
+    footer .copy-right img, footer .copy-right p {
+        display: block;
+    }
+    footer .widget-footer h4{
+        text-align: left;
+    }
+    footer .widget-footer ul{
+        padding: 0;
+        margin-left: 0;
+    
+    }
+    /* End Footer */
+
+}
