@@ -1,4 +1,4 @@
-/* This is from 0px to 768px */
+/* This is from 0to 768px */
     /* Start Header Section */
     body {
         padding: 0;
@@ -96,7 +96,7 @@
         color:#ffffff;
     }
     .pricing-plans .free-plan, .pricing-plans .Enterprise-plan, .pricing-plans .pro-plan {
-        margin:0px 0px 20px 0px;
+        margin:0 0 20px 0;
     }
     .pricing-plans .plan ul{
         list-style: none;
@@ -106,17 +106,26 @@
         margin-bottom: 4px;
     }
     .pricing-plans .plan .button{
-        padding: 10px 0px 10px 0px;
+        padding: 10px 0 10px 0;
         width: 270px;
         color: #ffffff;
         background-color: #1058f1 ;
         border-radius: 5px;
         border: #1058f1 solid 2px;
     }
+    .pricing-plans .plan .button:hover{
+        color: #1058f1;
+        background-color: #ffffff;
+    }
     #free-button{
         color: #1058f1;
         background-color: #ffffff;
         border: #1058f1 solid 2px;
+    }
+    #free-button:hover{
+        color: #ffffff;
+        background-color: #1058f1 ;
+        border: #ffffff solid 2px;
     }
     /* End Pricing Section*/
 
@@ -147,7 +156,7 @@
         border-bottom:1px solid #141414 ;
     }
     .compare-plans table tr .first-col{
-    padding-left: 10px !important ;
+    padding-left: 10!important ;
     padding-right: 5px !important;
     text-align: left;
     }
@@ -161,7 +170,7 @@
         margin-bottom: 40px;
     }
     footer .widget-footer{
-        margin: 0px 20px 0px 0px;
+        margin: 0 20px 0 0;
     }
     footer .copy-right img{
         width: 24px;
@@ -185,12 +194,12 @@
     footer .widget-footer ul li{
         list-style: none;
         color:#6c757d;
-        padding: 5px 0px 5px 0px;
+        padding: 5px 0 5px 0;
         font-size: 12px;
     }
     /* End Footer Style */
 
-/* This is from 801px to 1440px */
+/* This is from 801px to 1440*/
 @media only screen and (min-width: 801px) {
     /* Start Header Section */
     .container{
@@ -232,11 +241,11 @@
        margin-bottom: 40px;
     }
     .pricing-plans{
-        display: flexbox;
+        display:flex;
         margin-top: 20px;
     }
     .pricing-plans .free-plan, .pricing-plans .Enterprise-plan, .pricing-plans .pro-plan {
-        margin:0px 0px 20px 0px;
+        margin:0 20px 20px 0;
     }
     /* End Pricing Section*/
 
