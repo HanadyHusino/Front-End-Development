@@ -30,17 +30,100 @@
     }
     .main-menu ul{
         padding: 0;
+        display: inline-flex;
+        list-style: none;
     }
     .main-menu ul li{
-        display: inline;
+        margin-left: 10px;
+        padding: 5px;
+        text-align: center;
     }
     .main-menu ul li a{
         color: rgb(14, 13, 13);
         text-align: center;
-        margin-right: 10px;
         text-decoration: none;
         font-size: 16px;   
     }
+
+    .main-menu ul li:hover {
+        background-color: #1058f1;
+        border-radius: 5px;
+    }
+    
+    
+    .main-menu ul li a:hover{
+        color: #ffffff;
+    }
+    /* Start Sub Menu */
+    .sub-menu-1{
+        display: none;    
+    }
+    .main-menu ul li:hover .sub-menu-1 {
+        display: block;
+        position: absolute;
+        background-color: #1058f1;
+        margin-top: 15px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .main-menu ul li:hover .sub-menu-1 ul {
+        display: block;
+        margin: 10px;
+    }
+    .main-menu ul li:hover .sub-menu-1 ul li {
+        width: 100px;
+        padding: 10px;
+        border-bottom: 1px solid #ffffff;
+        border-radius: 0;
+        background-color: transparent;
+        text-align: left;
+    }
+    .main-menu ul li:hover .sub-menu-1 ul li:last-child {
+        border-bottom: none;
+    }
+    .fa-angle-down, .fa-angle-right	{
+        float: right;
+        margin-left: 10px;
+    }
+    .active-me:hover{
+        color: #ffffff;
+    }
+    .sub-menu-2 {
+        display: none;
+    }
+    .hover-me:hover .sub-menu-2 {
+        position: absolute;
+        display: block;
+        margin-left: 90px;
+        margin-top: -15px;
+        background-color: #1058f1;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    sub-menu-2 ul li a{
+        color: #ffffff;
+    }
+    /* End Sub Menu */
+    /*
+    .main-menu ul ul {
+        position: absolute;
+        margin-top: 5px;
+        display: none;
+    }
+    .main-menu ul ul li {
+        display: block;
+        padding: 10px;
+        background-color: #f4f4f4;
+        position: relative;
+    }
+    .main-menu ul ul li a{
+        color: rgb(14, 13, 13);
+        font-size: 16px;   
+    }
+    .main-menu ul li a:hover > ul{
+        display: block;
+    }
+*/
     /*End Header Section*/
 
     /* Start Pricing Section*/
@@ -163,7 +246,7 @@
     
     /* End Compare Plans */
 
-    /* Stert Footer Style */
+    /* Start Footer Style */
     footer{
         margin-left: 5px;
         margin-right: 5px;
