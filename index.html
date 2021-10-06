@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <!-- Start Main Header -->
@@ -17,7 +18,25 @@
         </header>
         <nav class="main-menu">
             <ul>
-                <li><a href="#">Features</a></li>
+                <li class="active-me"><a href="#">Features</a><i class="fa fa-angle-down"></i>
+                  <div class="sub-menu-1">
+                    <ul>
+                      <li class="hover-me"><a href="#">Feature 1</a><i class="fa fa-angle-right"></i>
+                        <div class="sub-menu-2">
+                            <ul>
+                              <li><a href="#">Normal</a></li>
+                              <li><a href="#">Good</a></li>
+                              <li><a href="#">Very Good</a></li>
+                            </ul>
+                        </div>
+                      
+                      
+                      </li>
+                      <li><a href="#">Feature 2</a></li>
+                      <li><a href="#">Feature 3</a></li>
+                    </ul>
+                  </div> 
+                </li>
                 <li><a href="#">Enterprise</a></li>
                 <li><a href="#">Support</a></li>
                 <li><a href="#">Pricing</a></li>
